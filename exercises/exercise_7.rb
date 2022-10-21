@@ -10,3 +10,31 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+def store_name
+  puts "Enter a store name:"
+  print "> "
+  @user_answer = gets.chomp
+end
+
+store_name
+
+@storeUser = Store.create(name: "#{@user_answer}"
+            # annual_revenue: 1111111,
+            # mens_apparel: true,
+            # womens_apparel: true
+            )
+
+pp Store.all
+
+@storeUser.valid?
+pp @storeUser.errors.full_messages
+
+
+
+# begin
+#   puts @storeUser
+#   puts "test error message"
+# rescue => exception 
+#   puts exception.backtrace
+#   raise
+# end

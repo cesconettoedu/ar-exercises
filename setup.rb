@@ -30,7 +30,7 @@ ActiveRecord::Schema.define do
     t.column :annual_revenue, :integer
     t.column :mens_apparel, :boolean
     t.column :womens_apparel, :boolean
-    t.timestamps null: false
+    t.timestamps null: false    
   end
   create_table :employees do |table|
     table.references :store
